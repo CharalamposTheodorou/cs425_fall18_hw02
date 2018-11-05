@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="About.css">
+    <link rel="stylesheet" type="text/css" href="Common.css">
+    <style>
+      body{
+        background-color:lightblue;
+        margin:0;
+        }
+      </style>
+</head>
+<body>
+    <div id="navBar">
+      <a href="Contact.html">Contact Us</a>
+      <a  class="active" href="About.html">About</a>
+      <a href="Home.html">Home</a>
+    </div>
+<div class="content">
+<button  onclick="topFunction()" class="Topbutton" > ^ </button>
+
+</div>
+<script>
+  window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navBar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("stick")
+  } else {
+    navbar.classList.remove("stick");
+  }
+}
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
+</div>
+  <br>
+
+
+</body>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div class="footer">
+  <div class="column">
+    <img src="facebook.png" style="width:10%">
+     <img src="twitter.png" style="width:10%">
+      <img src="linkedin.png" style="width:11.8%">
+  </div>
+</html>

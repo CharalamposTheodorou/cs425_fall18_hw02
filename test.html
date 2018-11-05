@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Photo Gallery</title>
+    <link rel="stylesheet" href="test.css" />
+</head>
+<body>
+    <div id="mainContainer">
+        <div id="mainImage">
+
+        </div>
+
+        <div id="thumbnails">
+            <img class="imgThumbnails" src="img/Flowers_by_Deidameia.jpg"/>
+            <img class="imgThumbnails" src="img/flower.jpg"/>
+            <img class="imgThumbnails" src="img/cone-flowers-preview.jpg" />
+            <img class="imgThumbnails" src="img/two_flowers.jpg" />
+        </div>
+    </div>
+    <div id="imgCaption">
+    </div>
+    <script>
+    window.onload = function(){
+  var mainImage = document.getElementById("mainImage").getElementsByTagName("img")[0],
+      thumbnailImages = document.getElementById("thumbnails").getElementsByTagName("img"),
+      j = 0;
+
+  var startTimer = function(){
+      stillTimer = setInterval(function(){
+              j = (j < 3) ? ++j : 0 ;
+              mainImage.src = thumbnailImages[j].src;
+
+          }, 10000);
+  }
+
+  startTimer();
+
+  for(i = 0 ; i < thumbnailImages.length ; i++){
+      thumbnailImages[i].addEventListener("click", function(evt){
+          clearInterval(stillTimer);
+          mainImage.src = evt.target.src;
+          ++j;
+          startTimer();
+      });
+  };
+}
+  </script>
+</body>
+</html>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="ContactStyle.css">
+    <link rel="stylesheet" type="text/css" href="Common.css">
+
+
+    <style>
+      body{
+        background-color:lightblue;
+        font-family: Arial, Helvetica, sans-serif;
+        margin:0;
+        }
+      </style>
+
+
+</head>
+<body>
+ <div id="navBar">
+  <a class="active" href="Contact.html">Contact Us</a>
+  <a href="About.html">About</a>
+  <a href="Home.html">Home</a>
+ </div>
+ <div class="content">
+ <ul>
+    <li style="color: #2e6c80;">Studio Address: SomeStreet Avenue</li>
+    <li style="color: #2e6c80;">Working Hours:
+    <ul>
+      <li style="color: #2e6c80;">Monday-Fridays(Except Wednesday): 08:30 - 18:00</li>
+      <li style="color: #2e6c80;">Wednesday: 10:00 - 17:00</li>
+      <li style="color: #2e6c80;">Wednesday: 10:00 - 15:00</li>
+    </ul>
+    </li>
+    <li>
+      <button class="Formbutton" onclick="openForm()">Submit Form</button>
+      <div class="form-popup" id="MeetingForm">
+        <form class="form-container">
+          <h1>Fill out form for an appointment</h1>
+          <div class="labels" id="Form">
+            <label for"Name"><br>Name:</br></label>
+            <input type="text" placeholder="Enter Name" required>
+            <label for"Surname><br>Surname:</br></label>
+            <input type="text" placeholder="Enter Surname" required>
+            <label for"Email"><br>Email:</br></label>
+            <input type="email" placeholder="Enter a valid email" required>
+            <br>
+            <label for"Message"><br>Message:<br></label>
+            <textarea style="resize:none;"type=message cols="60" rows="5" placeholder="Enter a message"></textarea>
+            <br>
+            <label for"Appointment"><br>Select Date for Appointment:</br></label>
+            <input type="date" required>
+          </div>
+          <br><br><br>
+          <button type="submit" class="btn">Submit</button>
+          <button type="button" class="cancel" onclick="closeForm()">Cancel</button>
+         </form>
+        </div>
+    </li>
+  </ul>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  </div>
+    <button  onclick="topFunction()" class="Topbutton" > ^ </button>
+  <script>
+  window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navBar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("stick")
+  } else {
+    navbar.classList.remove("stick");
+  }
+}
+  function openForm()
+  {
+      document.getElementById("MeetingForm").style.display ="block";
+  }
+  function closeForm()
+  {
+      document.getElementById("MeetingForm").style.display = "none";
+  }
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+ </script>
+
+</body>
+
+<div class="footer">
+  <div class="column">
+    <img src="facebook.png" style="width:10%">
+     <img src="twitter.png" style="width:10%">
+      <img src="linkedin.png" style="width:11.8%">
+  </div>
+</div>
+</html>

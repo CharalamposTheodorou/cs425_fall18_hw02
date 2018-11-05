@@ -1,0 +1,38 @@
+body {
+    margin: auto;
+    width: 800px;
+    height: 800px;
+}
+
+#mainContainer {
+    width: 760px;
+    height: 800px;
+}
+
+#mainImage {
+    margin: auto;
+    height: 560px;
+}
+
+#mainImage img {
+    margin: 10px;
+    width: 740px;
+    height: 540px;
+}
+
+#thumbnails {
+    padding-top: 10px;
+    height: 205px;
+}
+
+.imgThumbnails {
+    margin-left: 6px;
+    height: 186px;
+    width: 180px;
+    display: inline;
+    hover:
+}
+
+.imgThumbnails:hover {
+    cursor: pointer;
+}
