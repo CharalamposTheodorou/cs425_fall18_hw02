@@ -4,18 +4,37 @@ body {font-family: Verdana, sans-serif;}
 .mySlides2{display:none;}
 img {vertical-align: middle;}
 
-/* Slideshow container */
-.slideshow-container {
-  max-width: 10%;
-  position: relative;
-  margin: auto;
-	align-content: left;
-  z-index: 99;
-  left:0px;
-}
 
-/* Caption text */
-#text {
+.img-circle{
+  width:500px;
+  height:500px;
+  border-radius: 50%;
+  position:absolute;
+  margin-left:3%;
+  margin-top:5%;
+}
+.bio
+{
+  
+  color:black;
+  font-size:30px;
+  padding: 8px 12px;
+  position: relative;
+  padding-top:10px;
+  padding-bot:10px;
+  border-radius:3px;
+  background-color:transparent;
+  
+}
+.review{
+  float:left;
+  width: 45%;
+  padding:5px;
+  margin-left:10%;
+  padding-top:20px;
+  padding-bot:20px;
+}
+.text {
   color: #f2f2f2;
   font-size: 15px;
   padding: 8px 12px;
@@ -27,27 +46,11 @@ img {vertical-align: middle;}
 }
 
 
-/* The dots/bullets/indicators */
-.dot {
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-/*<div>
-  <span class="dot"></span>
-  <span class="dot"></span>
-  <span class="dot"></span>
-  <span class="dot"></span>
-  <span class="dot"></span>
-</div>*/
-.column{
+
+.column2{
   float:left;
-  width: 33.333333%;
-  padding:20px;
+  width: 45%;
+  padding:50px;
 }
 .row{
   content:"";
@@ -55,13 +58,7 @@ img {vertical-align: middle;}
   display: table;
 }
 
-
 .active {
   background-color: #717171;
 }
 
-/* Fading animation */
-.fade {
-  animation-name: fade;
-  animation-duration: 1.5s;
-}

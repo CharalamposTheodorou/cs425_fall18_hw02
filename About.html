@@ -19,28 +19,15 @@
       <a href="Contact.html">Contact Us</a>
     </div>
 <div class="content">
-  <section class="container">
-    <div id="textinfo">
-      <article>
-        sdfsdfsdfsdfsdfs23
-       </article>
-    </div>
-    <div id="text">
-      <article>
-        sfsdfsdfsdfsds
-       </article>
-    </div>
-   </section>
-  dsfsdf
+  <div class="column2">
+      <img class="img-circle" src="photographer.jpg">
+  </div>
+  <div class="column2">
+    <h1 class="bio"><strong>Bio</strong></h1>
+    <br>
+    <p1 class="bio">Jon Doe is a succesful photographer that started his journey at a very early age. He specializes in wild photography and cinematography and has worked with many experts in the field. Some of his finest work is the the video of bird migration and the photgraph of the extinct now, Australian Chameleon.</p1>
+   </div>
 </div>
-
-  <!--<div style="text-align:center">
-    <span class="dot"></span>
-    <span class="dot"></span>
-    <span class="dot"></span>
-    <span class="dot"></span>
-    <span class="dot"></span>
-  </div>-->
 <button  onclick="topFunction()" class="Topbutton" > ^ </button>
 
 </div>
@@ -49,24 +36,7 @@
 
 var navbar = document.getElementById("navBar");
 var sticky = navbar.offsetTop;
-var slideIndex = 0;
-showSlides();
-function showSlides() {
-    var i;
-    var slides = document.getElementsByClassName("mySlides");
-    var dots = document.getElementsByClassName("dot");
-    for (i = 0; i < slides.length; i++) {
-       slides[i].style.display = "none";
-    }
-    slideIndex++;
-    if (slideIndex > slides.length) {slideIndex = 1}
-    for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-    }
-    slides[slideIndex-1].style.display = "block";
-    dots[slideIndex-1].className += " active";
-    setTimeout(showSlides, 2000); // Change image every 2 seconds
-}
+
 function myFunction() {
   if (window.pageYOffset >= sticky) {
     navbar.classList.add("stick")

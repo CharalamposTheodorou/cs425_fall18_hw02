@@ -13,7 +13,29 @@
 .para{
   margin-left:10px;
   color: black;
+  align:center;
 }
 #vision{
   margin-left:10px;
+}
+.img-circle{
+  width:250px;
+  height:250px;
+  border-radius: 50%;
+}
+.review{
+  float:left;
+  width: 15%;
+  padding:5px;
+  margin-left:10%;
+  padding-top:20px;
+  padding-bot:20px;
+}
+.tran{
+  font-size: 25px;
+  background-color:#E2E2DE;
+   opacity:0.6;
+   filter: alpha(opacity=60);
+   border-radius: 15%;
+   font-face: Arial;
 }
