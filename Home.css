@@ -1,6 +1,19 @@
-/*.bg{
-	background-image: url("welcome.jpg");
-        background-repeat: no-repeat;
-	background-size: 100% 100%;
-        background-color:lightblue;
-}*/
+.container{
+  position: relative;
+  text-align:center;
+  color: #535B2B;
+}
+.text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 65px;
+}
+.para{
+  margin-left:10px;
+  color: black;
+}
+#vision{
+  margin-left:10px;
+}

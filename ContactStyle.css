@@ -24,19 +24,20 @@ article{
   left: 50%;
   transform: translate(-50%, -50%);
   width: 100%;
-  padding: 20px;
+  padding:0px;
 }
 #textinfo
 {
   text-align:left;
   color:#282828;
-  padding:20px 30px;
+  padding: 20px 0px;
   position: absolute;
   top:40px;
   right:0px;
+  left: 10px;
   width: 50%;
   margin-top:80px;
-  left: 55%;
+  left: 50%;
   font-size: 18px;
   font-style: oblique;
   font-family:inherit;
@@ -60,11 +61,11 @@ article{
 }
 .form-container {
   margin-top: 0px;
-  min-width: 10px;
+  min-width: 0px;
   left: 20px;
   max-width:50%;
-  width:50%;
-  padding: 10px;
+  width: 50%;
+  padding: 0px;
   position: absolute;
 }
 .form-container input[type=text],.form-container input[type=email]
