@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+      <style>
+      body{
+        background-color:#E2E2DE;
+        font-family: Arial, Helvetica, sans-serif;
+        margin:0;
+        }
+      </style>
+</head>
+<body>
+
+    <div id="navBar">
+      <a class="active" href="Home.html">Home</a>
+      <a href="About.html">About</a>
+      <a href="Contact.html">Contact Us</a>
+    </div>
+    <link rel="stylesheet" type="text/css" href="Home.css">
+    <link rel="stylesheet" type="text/css" href="Common.css">
+    <div class="container">
+     <img src="banner3.jpeg" alt="Banner" height="50%" width="100%">
+      <div class="text">J.D. Wild Photography</div>
+     </div>
+  <div class="content">
+    <h1 class="para">Our Vision</h1>
+      <p1 id="vision">J.D. Wild Photography aims to provide a new experience in the world of wild photography and cinematography.<br></p1>
+     
+    <h1 class="para">Photo Gallery</h1>
+    <div class="row" align="centre">
+      <div class="column">
+         <img src="mountain.jpeg" style="width:90%">
+      </div>
+       <div class="column">
+         <img src="suicide.jpeg" style="width:90%">
+      </div>
+      <div class="column">
+         <img src="forest.jpeg" style="width:90%">
+      </div>
+      <div class="column">
+         <img src="automn.jpg" style="width:90%">
+      </div>
+     </div>
+     <div class="row">
+      <div class="column">
+         <img src="night.jpg" style="width:90%">
+      </div>
+      <div class="column">
+         <img src="road.jpeg" style="width:90%">
+      </div>
+      <div class="column">
+         <img src="trees.jpeg" style="width:90%">
+      </div>
+      
+      <div class="column">
+         <img src="cool.jpg" style="width:90%">
+      </div>
+     </div>
+     <div class="row">
+      <div class="column">
+         <img src="sky.jpeg" style="width:90%">
+      </div>
+      <div class="column">
+         <img src="desert.jpeg" style="width:90%">
+      </div>
+      <div class="column">
+         <img src="rocks.jpeg" style="width:90%">
+      </div>
+      <div class="column">
+         <img src="lanta.jpeg" style="width:90%">
+      </div>
+     </div>
+  </div>
+  <h1 class="para">User Reviews</h1>
+  <div class="row">
+      <div class="review">
+        <img class="img-circle"src="face1.jpeg">
+       </div>
+       <div class="review">
+        <img class="img-circle"src="face2.jpeg">
+       </div>
+       <div class="review">
+          <img class="img-circle"src="face3.jpeg">
+       </div>
+    </div>
+    <div class="row">
+      <div class="review">
+        <div class="tran">
+           <center>I was very satisfied with the end results of Jon Doe. He really puts a lot of effort to his work and i strongly suggest him.</center>
+         </div>
+       </div>
+       <div class="review">
+        <div class="tran">
+           <center>I had real fun working with Jon, he is a good friend and a great photographer. My time working with him was well-spent.</center>
+         </div>
+       </div>
+       <div class="review">
+        <div class="tran">
+           <center>Jon specializes in Nature and specifically to wild life locations. He is very great at his job and provides a good experience to anyone participating to any of his projects.</center>
+         </div>
+       </div>
+     </div>
+  <button  onclick="topFunction()" class="Topbutton" > ^ </button>
+  <script>
+
+  window.onscroll = function(){Bar()};
+  var navbar = document.getElementById("navBar");
+  var stick = navbar.offsetTop;
+  var slideIndex = 0;
+  showSlides();
+
+  function showSlides() {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+         slides[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1}
+      for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " active";
+      setTimeout(showSlides, 2000); // Change image every 2 seconds
+
+  }
+
+  function Bar()
+  {
+    if(window.pageYOffset >= stick)
+      {navbar.classList.add("stick");}
+      else
+      {navbar.classList.remove("stick");}
+  }
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+</script>
+
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+
+</body>
+<div class="footer">
+  <div class="column">
+    <img src="facebook.png" style="width:30px">
+     <img src="twitter.png" style="width:30px">
+      <img src="linkedin.png" style="width:35px">
+  </div>
+</div>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="about.css">
+    <link rel="stylesheet" type="text/css" href="Common.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <style>
+    body{
+      background-color:#E2E2DE;
+      font-family: Arial, Helvetica, sans-serif;
+      margin:0;
+      }
+      </style>
+</head>
+<body>
+    <div id="navBar">
+      <a href="Home.html">Home</a>
+      <a  class="active" href="About.html">About</a>
+      <a href="Contact.html">Contact Us</a>
+    </div>
+<div class="content">
+  <div class="column2">
+      <img class="img-circle" src="photographer.jpg">
+  </div>
+  <div class="column2">
+    <h1 class="bio"><strong>Bio</strong></h1>
+    <br>
+    <p1 class="bio">Jon Doe is a succesful photographer that started his journey at a very early age. He specializes in wild photography and cinematography and has worked with many experts in the field. Some of his finest work is the the video of bird migration and the photgraph of the extinct now, Australian Chameleon.</p1>
+   </div>
+</div>
+<button  onclick="topFunction()" class="Topbutton" > ^ </button>
+
+</div>
+<script>
+  window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navBar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("stick")
+  } else {
+    navbar.classList.remove("stick");
+  }
+}
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+
+</script>
+
+</div>
+  <br>
+
+
+</body>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div class="footer">
+  <div class="column">
+    <img src="facebook.png" style="width:30px">
+   <img src="twitter.png" style="width:30px">
+    <img src="linkedin.png" style="width:35px">
+  </div>
+</html>
