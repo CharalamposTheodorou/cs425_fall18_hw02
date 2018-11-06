@@ -1,14 +1,17 @@
 * {box-sizing: border-box;}
 body {font-family: Verdana, sans-serif;}
 .mySlides {display: none;}
+.mySlides2{display:none;}
 img {vertical-align: middle;}
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 0%;
+  max-width: 10%;
   position: relative;
   margin: auto;
 	align-content: left;
+  z-index: 99;
+  left:0px;
 }
 
 /* Caption text */

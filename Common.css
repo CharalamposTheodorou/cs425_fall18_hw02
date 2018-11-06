@@ -9,7 +9,7 @@
 }
 #navBar {
 overflow:hidden;
-background-color: #444;
+background-color: #665D55;
 opacity:1;
 z-index: 99;
 }
@@ -19,9 +19,9 @@ z-index: 99;
   display: block;
   color: #f2f2f2;
   text-align: center;
-  padding: 14px 16px;
+  padding: 10px 20px;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 15px;
 }
 #navBar a:hover {
   background-color: #ddd;
@@ -29,8 +29,8 @@ z-index: 99;
 }
 
 #navBar a.active {
-  background-color: #4CAF50;
-  color: white;
+  background-color: #91837B;
+  color: #0F0F0E;
 }
 
 .content{
@@ -64,13 +64,13 @@ padding: 1rem;
     bottom: 20px;
     right: 30px;
     z-index: 99;
-    font-size: 30px;
+    font-size: 15px;
     border: none;
     outline: none;
     background-color: grey;
     color: white;
     cursor: pointer;
-    padding: 20px;
+    padding: 15px;
     border-radius: 4px;
 }
 .Topbutton:hover{
